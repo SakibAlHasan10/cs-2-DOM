@@ -68,44 +68,46 @@
         <section>
             <h1 class="text-center text-5xl mb-8">All Flower Card</h1>
             <div class="flex">
+                <!-- card 1 -->
                 <div class="grid grid-cols-3 w-9/12">
                     <div class="card  w-64 bg-base-100 shadow-2xl">
                         <figure><img class="w-[100%] h-[200px]" src="./imeges/Flower 01.png" alt="Shoes" /></figure>
                         <div class="card-body px-5">
                             <h2 class="card-title">Snow White</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions ">
-                                <button class="btn btn-primary">add to card</button>
-                            </div>
+                            <h5>Price: $ 90</h5>
+                            <button onclick="cardTotal(this)" class="btn btn-primary">add to card</button>
                         </div>
                     </div>
+                    <!-- card 2 -->
                     <div class="card  w-64 bg-base-100 shadow-2xl">
-                        <figure><img class="w-[100%] h-[200px]" src="./imeges/Flower 01.png" alt="Shoes" /></figure>
+                        <figure><img class="w-[100%] h-[200px] bg-slate-300" src="./imeges/pngwing 5.png" alt="Shoes" /></figure>
                         <div class="card-body px-5">
-                            <h2 class="card-title">Snow White</h2>
+                            <h2 class="card-title">Snow Red</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions ">
-                                <button class="btn btn-primary">add to card</button>
-                            </div>
+                            <h5>Price: $ 70</h5>
+                            <button onclick="cardTotal(this)" class="btn btn-primary">add to card</button>
                         </div>
                     </div>
+                    <!-- card 3 -->
                     <div class="card  w-64 bg-base-100 shadow-2xl">
-                        <figure><img class="w-[100%] h-[200px]" src="./imeges/Flower 01.png" alt="Shoes" /></figure>
+                        <figure><img class="w-[100%] h-[200px]" src="./imeges/Rectangle 5.png" alt="Shoes" /></figure>
                         <div class="card-body px-5">
-                            <h2 class="card-title">Snow White</h2>
+                            <h2 class="card-title">Snow Beauty</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions ">
-                                <button class="btn btn-primary">add to card</button>
-                            </div>
+                            <h5>Price: $ 50</h5>
+                            <button onclick="cardTotal(this)" class="btn btn-primary">add to card</button>
                         </div>
                     </div>
                 </div>
-                <div class="text-center w-3/12 mt-16">
-                    <h3 class="text-2xl mb-4">Code: Hero</h3>
-                    <h5 class="text-xl mb-2">Total: $ 00</h5>
-                    <h6 class="text-lg mb-2">Discount: $ 00</h6>
-                    <hr>
-                    <h4 class=" text-2xl mt-2">Grand Total: $ 00</h4>
+                <div class="flex items-center justify-center  flex-1">
+                    <div class="text-center  ">
+                        <h3 class="text-2xl mb-4">Code: Hero</h3>
+                        <h5  class="text-xl mb-2">Total: $<span id="card-total">00</span></h5>
+                        <h6 class="text-lg mb-2">Discount: $<span id="all-discount">00</span></h6>
+                        <hr>
+                        <h4 class=" text-2xl mt-2">Grand Total: $<span id="grand-total">00</span></h4>
+                    </div>
                 </div>
             </div>
         </section>
